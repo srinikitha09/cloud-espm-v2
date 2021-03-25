@@ -1,0 +1,22 @@
+#Project Setup
+general:
+  unsafeMode: true
+  collectTelemetryData: false
+  buildTool: 'maven'
+  pipeline: 'sap-cloud-sdk'
+
+stages:
+ # 'Additional Unit Tests':
+  #By default, karmaExecuteTests and npmExecuteScripts are enabled.
+    #karmaExecuteTests: false
+  Build:
+  #By default, below tests are disabled
+    mavenExecuteStaticCodeChecks: true
+    npmExecuteLint: true
+     
+#Steps Specific Configuration
+steps:
+  artifactPrepareVersion:
+    versioningType: 'cloud_noTag'
+    maven:
+      dockerImage: 'maven:3.6-jdk-8'
