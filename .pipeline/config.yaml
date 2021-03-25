@@ -3,6 +3,7 @@ general:
   unsafeMode: true
   collectTelemetryData: false
   buildTool: 'maven'
+
   pipeline: 'sap-cloud-sdk'
 
 stages:
@@ -16,6 +17,8 @@ stages:
      
 #Steps Specific Configuration
 steps:
+  mavenExecuteStaticCodeChecks:
+    spotBugsMaxAllowedViolations: 10
   artifactPrepareVersion:
     versioningType: 'cloud_noTag'
     maven:
