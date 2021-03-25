@@ -18,7 +18,8 @@ stages:
 #Steps Specific Configuration
 steps:
   mavenExecuteStaticCodeChecks:
-    spotBugsMaxAllowedViolations: 10
+    spotBugsMaxAllowedViolations: 60
+    pmdMaxAllowedViolations: 60
   artifactPrepareVersion:
     versioningType: 'cloud_noTag'
     maven:
