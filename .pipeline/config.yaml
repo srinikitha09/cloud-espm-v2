@@ -12,8 +12,8 @@ stages:
     #karmaExecuteTests: false
   Build:
   #By default, below tests are disabled
-    mavenExecuteStaticCodeChecks: true
-    npmExecuteLint: true
+    mavenExecuteStaticCodeChecks: false
+    npmExecuteLint: false
      
 #Steps Specific Configuration
 steps:
