@@ -3,7 +3,7 @@ general:
   unsafeMode: true
   collectTelemetryData: false
   buildTool: 'maven'
-
+  productiveBranch: 'maven'
   pipeline: 'sap-cloud-sdk'
 
 stages:
