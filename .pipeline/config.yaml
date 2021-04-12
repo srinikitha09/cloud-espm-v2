@@ -21,6 +21,6 @@ steps:
     spotBugsMaxAllowedViolations: 60
     pmdMaxAllowedViolations: 60
   artifactPrepareVersion:
-    versioningType: 'cloud_noTag'
+    versioningType: 'library'
     maven:
       dockerImage: 'maven:3.6-jdk-8'
